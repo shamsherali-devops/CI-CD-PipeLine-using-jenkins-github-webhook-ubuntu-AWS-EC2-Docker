@@ -10,7 +10,8 @@ pipeline{
     stages{
         stage('clone repo'){
             steps{
-                git branch: 'main', url: 'https://github.com/shamsherali-devops/CI-CD-PipeLine-using-jenkins-github-webhook-ubuntu-AWS-EC2-Docker'
+                git branch: 'main',
+                url: 'https://github.com/shamsherali-devops/CI-CD-PipeLine-using-jenkins-github-webhook-ubuntu-AWS-EC2-Docker'
       
                 
                  }
