@@ -51,7 +51,7 @@ pipeline{
                 body:"The NestJs application has been successfully deployed and is running on port 
                 http://13.49.241.233:${PORT)}/
                 ",
-                to: "${EMAIL}" 
+                to: "${EMAIL}"   
      
             )
         }
