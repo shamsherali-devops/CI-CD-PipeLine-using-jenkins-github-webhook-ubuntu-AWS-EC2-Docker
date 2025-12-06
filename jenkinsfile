@@ -52,7 +52,7 @@ pipeline{
                 http://13.49.241.233:${PORT)}/
                 ",
                 to: "${EMAIL}"
-
+     
 
             )
         }
