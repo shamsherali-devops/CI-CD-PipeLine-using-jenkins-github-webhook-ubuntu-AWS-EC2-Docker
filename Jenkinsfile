@@ -29,7 +29,7 @@ pipeline {
                    docker rm ${CONTAINER_NAME} || true
                 """
             }
-        }
+        }  
 
         stage('Run Docker Container') {
             steps {
