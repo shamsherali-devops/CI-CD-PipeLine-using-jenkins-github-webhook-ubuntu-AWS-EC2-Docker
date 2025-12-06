@@ -28,20 +28,20 @@ pipeline{
 
     stage('Stop & remove previous container'){
         steps{
-            sh '''
+            sh """
                docker stop $CONTAINER_NMAE || true
                docker rm $CONTAINER_NAME || true
-            '''
+            """
         }
     }
 
 
     stage('Docker container run'){
         steps{
-            sh '''
+            sh """
                docker run -d -p $PORT:$PORT 
                --name $CONTAINER_NAME $IMAGRE_NAME
-            '''
+            """
         }
     }
     
